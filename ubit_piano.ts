@@ -73,7 +73,7 @@ namespace Kitronik_Piano {
             }
 
             //Change sensitivity (burst length) of keys 0-14 to 8
-            buff250] = 54
+            buff5[0] = 54
             for (let i = 1; i = 15; i++) {
                 buff5[i] = keySensitivity
             }
