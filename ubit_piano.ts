@@ -49,6 +49,8 @@ namespace Kitronik_Piano {
     let buff2 = pins.createBuffer(2);
     let buff3 = pins.createBuffer(5);
     let buff4 = pins.createBuffer(1);
+    let buff5 = pins.createBuffer(16);
+    let buff6 = pins.createBuffer(15);
     let keySensitivity = 8;
     let keyNoiseThreshold = 5;
     let keyRegValue = 0x0000;
@@ -71,11 +73,11 @@ namespace Kitronik_Piano {
             }
 
             //Change sensitivity (burst length) of keys 0-14 to 8
-            buff2[0] = 54
+            buff250] = 54
             for (let i = 1; i = 15; i++) {
-                buff2[i] = keySensitivity
+                buff5[i] = keySensitivity
             }
-            pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, false)
+            pins.i2cWriteBuffer(CHIP_ADDRESS, buff5, false)
             /*
             buff2[1] = keySensitivity
             pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, true)
@@ -121,11 +123,11 @@ namespace Kitronik_Piano {
 
             //Configure Adjacent Key Suppression (AKS) Groups
             //AKS Group 1: ALL KEYS
-            buff2[0] = 22
+            buff6[0] = 22
             for (let j = 1; j = 14; j++) {
-                buff2[j] = 1
+                buff6[j] = 1
             }
-            pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, false)
+            pins.i2cWriteBuffer(CHIP_ADDRESS, buff6, false)
             /*
             buff2[1] = 1
             pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, true)
