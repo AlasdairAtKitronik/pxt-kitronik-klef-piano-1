@@ -78,38 +78,6 @@ namespace Kitronik_Piano {
                 buff5[i] = keySensitivity
             }
             pins.i2cWriteBuffer(CHIP_ADDRESS, buff5, false)
-            /*
-            buff2[1] = keySensitivity
-            pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, true)
-            buff2[0] = 55
-            pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, true)
-            buff2[0] = 56
-            pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, true)
-            buff2[0] = 57
-            pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, true)
-            buff2[0] = 58
-            pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, true)
-            buff2[0] = 59
-            pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, true)
-            buff2[0] = 60
-            pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, true)
-            buff2[0] = 61
-            pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, true)
-            buff2[0] = 62
-            pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, true)
-            buff2[0] = 63
-            pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, true)
-            buff2[0] = 64
-            pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, true)
-            buff2[0] = 65
-            pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, true)
-            buff2[0] = 66
-            pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, true)
-            buff2[0] = 67
-            pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, true)
-            buff2[0] = 68
-            pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, true)
-            */
 
             //Disable key 15 as it is not used
             buff2[0] = 69
@@ -128,38 +96,6 @@ namespace Kitronik_Piano {
                 buff6[j] = 1
             }
             pins.i2cWriteBuffer(CHIP_ADDRESS, buff6, false)
-            /*
-            buff2[1] = 1
-            pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, true)
-            buff2[0] = 23
-            pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, true)
-            buff2[0] = 24
-            pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, true)
-            buff2[0] = 25
-            pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, true)
-            buff2[0] = 26
-            pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, true)
-            buff2[0] = 27
-            pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, true)
-            buff2[0] = 28
-            pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, true)
-            buff2[0] = 29
-            pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, true)
-            buff2[0] = 30
-            pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, true)
-            buff2[0] = 31
-            pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, true)
-            buff2[0] = 32
-            pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, true)
-            buff2[0] = 33
-            pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, true)
-            buff2[0] = 34
-            pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, true)
-            buff2[0] = 35
-            pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, true)
-            buff2[0] = 36
-            pins.i2cWriteBuffer(CHIP_ADDRESS, buff2, false)
-            */
 
             //Send calibration command
             buff2[0] = 10
